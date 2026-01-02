@@ -1,0 +1,7 @@
+/* retruve each customers name, country and score */
+
+select
+	first_name, 
+	country, 
+	score
+from customers
