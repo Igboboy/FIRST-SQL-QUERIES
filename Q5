@@ -1,0 +1,10 @@
+ -- find the average score for each country considering only the customers with a score equal to 0 and 
+ -- return only those countries with an average score greater than 430
+
+ select 
+ country, 
+ avg (score)
+ from customers
+ where score ! = 0
+ group by country
+ having  avg (score) > 430
