@@ -1,0 +1,5 @@
+-- retrive all customers and sort by the higeest score first
+
+select *
+from customers
+order by score desc
