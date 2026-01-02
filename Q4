@@ -1,0 +1,9 @@
+-- find the total score and total no customers for each country
+
+select 
+country, 
+count (id) as total_customers,
+sum (score) as total_score
+
+from customers
+group by country
